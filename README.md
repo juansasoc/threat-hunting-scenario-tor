@@ -162,7 +162,9 @@ A shortcut (.lnk) version was also created in the "Recent Files" folder, showing
 The tor-shopping-list.txt file was modified again on the Desktop.
 
 📅 Full Timeline Overview (Summarized Chronologically)
+
 Time	       Event Type	           Summary
+
 5:31:28 PM	 Installation	         Tor Browser installer launched by user "torboi".
 5:32:29 PM	 Network	              Tor connects to hidden service IP & website.
 5:32:39 PM	 Network	              Firefox connects locally to the Tor service (127.0.0.1).
