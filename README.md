@@ -117,7 +117,7 @@ Tor Network Connections
 The Tor process (tor.exe) successfully connected to IP address 192.42.132.106.
 
 A connection was made to the hidden website:
-https://www.c5yraaw54zp6bfs7n.com
+https://www[.]c5yraaw54zp6bfs7n[.]com
 
 🕒 5:32:29 PM
 
