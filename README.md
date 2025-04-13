@@ -36,17 +36,11 @@ Searched the DeviceFileEvents table for ANY file that had the string “tor” i
 
 ```kql
 DeviceFileEvents 
-
 | where DeviceName == "rivj-tor-vm" 
-
-|where InitiatingProcessAccountName  == "torboi" 
-
+| where InitiatingProcessAccountName  == "torboi" 
 | where FileName contains "tor" 
-
 | where Timestamp >= datetime(2025-04-11T22:31:26.3698616Z) 
-
 | order by Timestamp desc  
-
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName 
 ```
 <img width="1212" alt="image" src="https://github.com/user-attachments/assets/71402e84-8767-44f8-908c-1805be31122d">
