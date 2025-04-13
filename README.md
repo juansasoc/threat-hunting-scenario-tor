@@ -49,24 +49,29 @@ DeviceFileEvents
 
 ---
 
-### 2. Searched the `DeviceProcessEvents` Table
+### 2. 
 
-Searched for any `ProcessCommandLine` that contained the string "tor-browser-windows-x86_64-portable-14.0.1.exe". Based on the logs returned, at `2024-11-08T22:16:47.4484567Z`, an employee on the "threat-hunt-lab" device ran the file `tor-browser-windows-x86_64-portable-14.0.1.exe` from their Downloads folder, using a command that triggered a silent installation.
+Searched the `DeviceProcessEvents` Table for TOR Browser Execution
+
+Searched the DeviceProcessEvents table for any indication that user “torboi” actually opened the tor browser. There was evidence that they did open it at:  Apr 11, 2025 5:32:07 PM . There were several other instances of firefox.exe (Tor) as well as tor.exe spawned afterward 
+
+
 
 **Query used to locate event:**
 
 ```kql
+DeviceProcessEvents 
+| where DeviceName == "rivj-tor-vm" 
+| where FileName has_any ("tore.exe", "firefox.exe", "tor-browser.exe") 
+| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine 
+| order by Timestamp desc 
 
-DeviceProcessEvents  
-| where DeviceName == "threat-hunt-lab"  
-| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.0.1.exe"  
-| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 ```
 <img width="1212" alt="image" src="https://github.com/user-attachments/assets/b07ac4b4-9cb3-4834-8fac-9f5f29709d78">
 
 ---
 
-### 3. Searched the `DeviceProcessEvents` Table for TOR Browser Execution
+### 3.
 
 Searched for any indication that user "employee" actually opened the TOR browser. There was evidence that they did open it at `2024-11-08T22:17:21.6357935Z`. There were several other instances of `firefox.exe` (TOR) as well as `tor.exe` spawned afterwards.
 
