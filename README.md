@@ -71,7 +71,9 @@ DeviceProcessEvents
 
 ### 3.  Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
-Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2024-11-08T22:18:01.1246358Z`, an employee on the "threat-hunt-lab" device successfully established a connection to the remote IP address `176.198.159.33` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\employee\desktop\tor browser\browser\torbrowser\tor\tor.exe`. There were a couple of other connections to sites over port `443`.
+ Searched the DeviceNetworkEvents table for any indication the tor browser was used to establish a connection using any of the known tor ports. On April 11, 2025, at 5:32 PM, a virtual machine named "rivj-tor-vm" had a user account called "torboi" that successfully made a network connection. The connection was made 
+ to the IP address 192.42.132.106, specifically to the website: https://www{.}c5yraaw54zp6bfs7n[.]com . The program that made the connection was Tor (a privacy-focused browser), and it was run from this location: 
+ C:\Users\torboi\Desktop\Tor Browser\Browser\TorBrowser\tor\tor.exe 
 
 **Query used to locate events:**
 
