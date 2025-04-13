@@ -59,7 +59,7 @@ Searched the DeviceProcessEvents table for any indication that user “torboi”
 ```kql
 DeviceProcessEvents 
 | where DeviceName == "rivj-tor-vm" 
-| where FileName has_any ("tore.exe", "firefox.exe", "tor-browser.exe") 
+| where FileName has_any ("tor.exe", "firefox.exe", "tor-browser.exe") 
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine 
 | order by Timestamp desc 
 
