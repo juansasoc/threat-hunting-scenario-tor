@@ -64,29 +64,12 @@ DeviceProcessEvents
 | order by Timestamp desc 
 
 ```
-<i![image](https://github.com/user-attachments/assets/abcc4680-fb4b-4544-9266-754d04e0de55)
+![image](https://github.com/user-attachments/assets/abcc4680-fb4b-4544-9266-754d04e0de55)
 >
 
 ---
 
-### 3.
-
-Searched for any indication that user "employee" actually opened the TOR browser. There was evidence that they did open it at `2024-11-08T22:17:21.6357935Z`. There were several other instances of `firefox.exe` (TOR) as well as `tor.exe` spawned afterwards.
-
-**Query used to locate events:**
-
-```kql
-DeviceProcessEvents  
-| where DeviceName == "threat-hunt-lab"  
-| where FileName has_any ("tor.exe", "firefox.exe", "tor-browser.exe")  
-| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine  
-| order by Timestamp desc
-```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f">
-
----
-
-### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
+### 3.  Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
 Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2024-11-08T22:18:01.1246358Z`, an employee on the "threat-hunt-lab" device successfully established a connection to the remote IP address `176.198.159.33` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\employee\desktop\tor browser\browser\torbrowser\tor\tor.exe`. There were a couple of other connections to sites over port `443`.
 
@@ -104,6 +87,13 @@ DeviceNetworkEvents
 <img width="1212" alt="image" src="https://github.com/user-attachments/assets/87a02b5b-7d12-4f53-9255-f5e750d0e3cb">
 
 ---
+
+
+<>
+
+---
+
+### 4.
 
 ## Chronological Event Timeline 
 
