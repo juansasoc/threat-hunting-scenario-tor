@@ -49,12 +49,9 @@ DeviceFileEvents
 
 ---
 
-### 2. 
-
-Searched the `DeviceProcessEvents` Table for TOR Browser Execution
+### 2. Searched the 'DeviceProcessEvents' Table 
 
 Searched the DeviceProcessEvents table for any indication that user “torboi” actually opened the tor browser. There was evidence that they did open it at:  Apr 11, 2025 5:32:07 PM . There were several other instances of firefox.exe (Tor) as well as tor.exe spawned afterward 
-
 
 
 **Query used to locate event:**
