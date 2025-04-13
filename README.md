@@ -101,138 +101,76 @@ DeviceNetworkEvents
 
 ## Chronological Event Timeline 
 
-🟢 1. Installation Activity 
+🟢 1. Installation Activity
+Tor Browser Installation
+🕒 5:31:28 PM
 
-Tor Browser Installation 
+User "torboi" on virtual machine "rivj-tor-vm" launched the Tor Browser installer:
+tor-browser-windows-x86_64-portable-14.0.9.exe
 
-🕒 5:31:28 PM 
+Location: C:\Users\torboi\Downloads
 
-User "torboi" on virtual machine "rivj-tor-vm" launched the Tor Browser installer: 
- tor-browser-windows-x86_64-portable-14.0.9.exe 
+🌐 2. Network Activity
+Tor Network Connections
+🕒 5:32:29 PM
 
-Location: C:\Users\torboi\Downloads 
+The Tor process (tor.exe) successfully connected to IP address 192.42.132.106.
 
- 
+A connection was made to the hidden website:
+https://www.c5yraaw54zp6bfs7n.com
 
-🌐 2. Network Activity 
+🕒 5:32:29 PM
 
-Tor Network Connections 
+Another connection to 192.42.132.106 was logged by the same tor.exe process.
 
-🕒 5:32:29 PM 
+🕒 5:32:39 PM
 
-The Tor process (tor.exe) successfully connected to IP address 192.42.132.106. 
+The Tor Browser's Firefox component (firefox.exe) connected to 127.0.0.1 (localhost), showing it was routing traffic through the local Tor service as expected.
 
-A connection was made to the hidden website: 
- https://www.c5yraaw54zp6bfs7n.com 
+⚙️ 3. Process Creation
+Tor and Firefox Processes
+🕒 5:33:25 PM – 5:34:28 PM
 
-🕒 5:32:29 PM 
+Multiple Firefox browser processes were launched by the Tor Browser.
 
-Another connection to 192.42.132.106 was logged by the same tor.exe process. 
+This likely represents the browser opening tabs or loading content.
 
-🕒 5:32:39 PM 
+Location:
+C:\Users\torboi\Desktop\Tor Browser\Browser\firefox.exe
 
-The Tor Browser's Firefox component (firefox.exe) connected to 127.0.0.1 (localhost), showing it was routing traffic through the local Tor service as expected. 
+📝 4. File Activity
+Browser and User Files
+🕒 5:36:36 PM
 
- 
+File formhistory.sqlite was created in the Tor Browser folder.
+Stores form data (e.g., autofill history).
 
-⚙️ 3. Process Creation 
+🕒 5:38:20 PM
 
-Tor and Firefox Processes 
+File webappsstore.sqlite was created.
+Stores local web app data (like cookies or cached content).
 
-🕒 5:33:25 PM – 5:34:28 PM 
+User File: tor-shopping-list
+🕒 5:38:37 PM
 
-Multiple Firefox browser processes were launched by the Tor Browser. 
+File tor-shopping-list.txt was renamed.
 
-This likely represents the browser opening tabs or loading content. 
+A shortcut (.lnk) version was also created in the "Recent Files" folder, showing it was accessed.
 
-Location: 
- C:\Users\torboi\Desktop\Tor Browser\Browser\firefox.exe 
+🕒 5:39:02 PM
 
- 
+The tor-shopping-list.txt file was modified again on the Desktop.
 
-📝 4. File Activity 
-
-Browser and User Files 
-
-🕒 5:36:36 PM 
-
-File formhistory.sqlite was created in the Tor Browser folder. 
- Stores form data (e.g., autofill history). 
-
-🕒 5:38:20 PM 
-
-File webappsstore.sqlite was created. 
- Stores local web app data (like cookies or cached content). 
-
-User File: tor-shopping-list 
-
-🕒 5:38:37 PM 
-
-File tor-shopping-list.txt was renamed. 
-
-A shortcut (.lnk) version was also created in the "Recent Files" folder, showing it was accessed. 
-
-🕒 5:39:02 PM 
-
-The tor-shopping-list.txt file was modified again on the Desktop. 
-
- 
-
-📅 Full Timeline Overview (Summarized Chronologically) 
-
-Time 
-
-Event Type 
-
-Summary 
-
-5:31:28 PM 
-
-Installation 
-
-Tor Browser installer launched by user "torboi". 
-
-5:32:29 PM 
-
-Network 
-
-Tor connects to hidden service IP & website. 
-
-5:32:39 PM 
-
-Network 
-
-Firefox connects locally to the Tor service (127.0.0.1). 
-
-5:33–5:34 PM 
-
-Process Creation 
-
-Multiple Firefox processes are launched by the browser. 
-
-5:36:36 PM 
-
-File Creation 
-
-Form history file created in Tor Browser folder. 
-
-5:38:20 PM 
-
-File Creation 
-
-Web storage file created (likely from browsing activity). 
-
-5:38:37 PM 
-
-File Rename/Shortcut 
-
-tor-shopping-list.txt renamed and shortcut created. 
-
-5:39:02 PM 
-
-File Modified 
-
-tor-shopping-list.txt modified on Desktop. 
+📅 Full Timeline Overview (Summarized Chronologically)
+Time	Event Type	Summary
+5:31:28 PM	Installation	Tor Browser installer launched by user "torboi".
+5:32:29 PM	Network	Tor connects to hidden service IP & website.
+5:32:39 PM	Network	Firefox connects locally to the Tor service (127.0.0.1).
+5:33–5:34 PM	Process Creation	Multiple Firefox processes are launched by the browser.
+5:36:36 PM	File Creation	Form history file created in Tor Browser folder.
+5:38:20 PM	File Creation	Web storage file created (likely from browsing activity).
+5:38:37 PM	File Rename/Shortcut	tor-shopping-list.txt renamed and shortcut created.
+5:39:02 PM	File Modified	tor-shopping-list.txt modified on Desktop.
 
  
 
