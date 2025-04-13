@@ -163,23 +163,23 @@ The tor-shopping-list.txt file was modified again on the Desktop.
 
 📅 Full Timeline Overview (Summarized Chronologically)
 
-Time	       Event Type	           Summary
+Time	          Event Type	                     Summary
 
-5:31:28 PM	 Installation	         Tor Browser installer launched by user "torboi".
+5:31:28 PM	    Installation	                   Tor Browser installer launched by user "torboi".
 
-5:32:29 PM	 Network	              Tor connects to hidden service IP & website.
+5:32:29 PM	    Network	                        Tor connects to hidden service IP & website.
 
-5:32:39 PM	 Network	              Firefox connects locally to the Tor service (127.0.0.1).
+5:32:39 PM	    Network	                        Firefox connects locally to the Tor service (127.0.0.1).
 
-5:33–34 PM	 Process Creation	     Multiple Firefox processes are launched by the browser.
+5:33–34 PM	    Process Creation	               Multiple Firefox processes are launched by the browser.
 
-5:36:36 PM	 File Creation	        Form history file created in Tor Browser folder.
+5:36:36 PM	    File Creation	                  Form history file created in Tor Browser folder.
 
-5:38:20 PM	 File Creation	        Web storage file created (likely from browsing activity).
+5:38:20 PM	    File Creation	                  Web storage file created (likely from browsing activity).
 
-5:38:37 PM	 File Rename/Shortcut	 tor-shopping-list.txt renamed and shortcut created.
+5:38:37 PM	    File Rename/Shortcut	           tor-shopping-list.txt renamed and shortcut created.
 
-5:39:02 PM	 File Modified	        tor-shopping-list.txt modified on Desktop.
+5:39:02 PM	    File Modified	                  tor-shopping-list.txt modified on Desktop.
 
  
 
